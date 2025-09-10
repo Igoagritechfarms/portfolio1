@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Manup Template">
+    <meta name="keywords" content="Manup, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>walkathon</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<style>
+    .event-card-section {
+        background: url('img/newslatter-bg.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .event-card {
+        background: rgba(255, 255, 255, 0.95);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+
+    .event-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .event-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .event-organizer {
+        font-size: 0.95rem;
+    }
+
+    .event-details li {
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 576px) {
+        .event-title {
+            font-size: 1.25rem;
+        }
+
+        .event-details li {
+            font-size: 0.9rem;
+        }
+    }
+
+    .cd-item {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        min-width: 80px;
+    }
+
+    .cd-item span {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .cd-item p {
+        margin: 0;
+    }
+
+    .cd-item {
+        min-width: 100px;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    #event-status {
+        font-size: 1.25rem;
+    }
+
+    #event-background {
+        background: url('./img/newslatter-bg.jpg') no-repeat center center;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .cd-item {
+        min-width: 80px;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    #event-status {
+        font-size: 1.25rem;
+    }
+
+    @media (max-width: 576px) {
+        .cd-item {
+            min-width: 60px;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+    }
+</style>
+
+
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="img/logo.jpg" width="50px" height="50px">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#coaches">Coaches</a></li>
+                        <li><a href="#event">Event Register</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <a href="https://docs.google.com/forms/d/172gjrXsY7DwYl3otCwexn3Tr37k7zed0aTR4yBKM864/edit" class="primary-btn top-btn"><i class="fa fa-ticket"></i> Ticket</a>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero-section set-bg" data-setbg="img/hero.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="hero-text">
+                        <h2>Dr.John Yesudhas <br /> Sports Coordinator</h2>
+                        <a href="https://docs.google.com/forms/d/172gjrXsY7DwYl3otCwexn3Tr37k7zed0aTR4yBKM864/edit" class="primary-btn">Buy Ticket</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/hero-right.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter-section py-5 text-white text-center" id="event-background">
+        <div class="container">
+            <h2 class="mb-4">Walkathon Event Countdown</h2>
+            <div class="cd-timer d-flex justify-content-center gap-4 flex-wrap">
+                <div class="cd-item p-3 bg-dark rounded">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="cd-item p-3 bg-dark rounded">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="cd-item p-3 bg-dark rounded">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="cd-item p-3 bg-dark rounded">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <div id="event-status" class="mt-3 text-warning"></div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function updateCountdown() {
+                let now = new Date();
+                let targetStart = new Date('2025-09-14T06:00:00');
+                let targetEnd = new Date('2025-09-14T08:00:00');
+
+                if (now < targetStart) {
+                    let diff = targetStart - now;
+                    $('#event-status').text('Event has not started yet!');
+                    calculateAndDisplay(diff);
+                } else if (now >= targetStart && now <= targetEnd) {
+                    let diff = targetEnd - now;
+                    $('#event-status').text('Event is Live! Countdown to End');
+                    calculateAndDisplay(diff);
+                } else {
+                    $('#days, #hours, #minutes, #seconds').text('00');
+                    $('#event-status').text('The Event has ended.');
+                    clearInterval(timerInterval);
+                }
+            }
+
+            function calculateAndDisplay(diff) {
+                let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                let minutes = Math.floor((diff / (1000 * 60)) % 60);
+                let seconds = Math.floor((diff / 1000) % 60);
+
+                $('#days').text(days.toString().padStart(2, '0'));
+                $('#hours').text(hours.toString().padStart(2, '0'));
+                $('#minutes').text(minutes.toString().padStart(2, '0'));
+                $('#seconds').text(seconds.toString().padStart(2, '0'));
+            }
+
+            updateCountdown();
+            let timerInterval = setInterval(updateCountdown, 1000);
+        });
+    </script>
+
+
+    <!-- Counter Section End -->
+
+    <!-- Home About Section Begin -->
+    <section class="home-about-section spad" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ha-pic">
+                        <img src="img/h-about.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ha-text">
+                        <h2>About Walkathon Event</h2>
+                        <p>The IGO Group of Companies proudly organized a refreshing Walkathon on Sunday, 14th morning
+                            from
+                            6:00 AM to 8:00 AM at Besant Nagar Beach. The event brought together fitness enthusiasts,
+                            families, and community members for a morning filled with energy, wellness, and positivity.
+                            To make the walk even more impactful, special fitness and stretching sessions were conducted
+                            by expert coaches Mr. Mowli and Mr. Joshwa, guiding participants on the importance of
+                            proper warm-up, stretching, and maintaining a healthy lifestyle. With the sound of the
+                            waves,
+                            the morning breeze, and the spirit of togetherness, the Walkathon created a perfect
+                            atmosphere
+                            to inspire fitness
+                            and unity. It was not just a walk but a celebration of health, happiness, and community
+                            bonding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home About Section End -->
+
+    <!-- Team Member Section Begin -->
+    <section class="team-member-section" id="coaches">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Fitness and Stitching Coaching</h2>
+                        <p>These are our communicators, you can see each person information</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="member-item set-bg"data-setbg="img/team-member/member-1.jpeg" style="margin-left: 25%;">
+            <div class="mi-social">
+                <div class="mi-social-inner bg-gradient">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="mi-text">
+                <h5>Mowlii</h5>
+                <span>Fitness and Stitching Coaching</span>
+            </div>
+        </div>
+        <div class="member-item set-bg" data-setbg="img/team-member/member-2.jpeg" style="margin-left: 2%;">
+            <div class="mi-social">
+                <div class="mi-social-inner bg-gradient">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="mi-text">
+                <h5>Deepak</h5>
+                <span>Fitness and Stitching Coaching</span>
+            </div>
+        </div>
+    </section>
+    <!-- Team Member Section End -->
+
+    <!-- Schedule Section Begin -->
+
+    <section class="event-card-section py-5" id="event">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+
+                    <div class="event-card p-4 bg-white rounded shadow-sm text-center">
+                        <h3 class="event-title">🚶‍♂️ Walkathon Event</h3>
+                        <p class="event-organizer text-muted">Organized by IGO Group of Company</p>
+
+                        <ul class="list-unstyled event-details mb-3">
+                            <li><strong>Date:</strong> 14th Sep, 2025</li>
+                            <li><strong>Time:</strong> 6:00 AM - 8:00 AM</li>
+                            <li><strong>Venue:</strong> 34, Elliot's Promenade, Odaimanagar,
+                                Besant Nagar, Chennai, Tamil Nadu 600090
+                            </li>
+                        </ul>
+
+                        <div class="event-img mb-3">
+                            <img src="img/event-bg.jpg" class="img-fluid rounded" alt="Walkathon Event Image">
+                        </div>
+
+                        <a href="https://docs.google.com/forms/d/172gjrXsY7DwYl3otCwexn3Tr37k7zed0aTR4yBKM864/edit"
+                            class="btn btn-primary">Register Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Schedule Section End -->
+
+    <!-- Pricing Section Begin -->
+    <!-- <section class="pricing-section set-bg spad" data-setbg="img/pricing-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Ticket Pricing</h2>
+                        <p>Get your event ticket plan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="price-item">
+                        <h4>1 Day Pass</h4>
+                        <div class="pi-price">
+                            <h2><span>$</span>129</h2>
+                        </div>
+                        <ul>
+                            <li>One Day Conference Ticket</li>
+                            <li>Coffee-break</li>
+                            <li>Lunch and Networking</li>
+                            <li>Keynote talk</li>
+                            <li>Talk to the Editors Session</li>
+                        </ul>
+                        <a href="#" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="price-item top-rated">
+                        <div class="tr-tag">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>Full Pass</h4>
+                        <div class="pi-price">
+                            <h2><span>$</span>199</h2>
+                        </div>
+                        <ul>
+                            <li>One Day Conference Ticket</li>
+                            <li>Coffee-break</li>
+                            <li>Lunch and Networking</li>
+                            <li>Keynote talk</li>
+                            <li>Talk to the Editors Session</li>
+                            <li>Lunch and Networking</li>
+                            <li>Keynote talk</li>
+                        </ul>
+                        <a href="#" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="price-item">
+                        <h4>Group Pass</h4>
+                        <div class="pi-price">
+                            <h2><span>$</span>79</h2>
+                        </div>
+                        <ul>
+                            <li>One Day Conference Ticket</li>
+                            <li>Coffee-break</li>
+                            <li>Lunch and Networking</li>
+                            <li>Keynote talk</li>
+                            <li>Talk to the Editors Session</li>
+                        </ul>
+                        <a href="#" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Pricing Section End -->
+
+    <!-- latest BLog Section Begin -->
+    <!-- <section class="latest-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Latest News</h2>
+                        <p>Do not miss anything topic abput the event</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="latest-item set-bg large-item" data-setbg="img/blog/latest-b/latest-1.jpg">
+                        <div class="li-tag">Marketing</div>
+                        <div class="li-text">
+                            <h4><a href="./blog-details.html">Improve You Business Cards And Enchan Your Sales</a></h4>
+                            <span><i class="fa fa-clock-o"></i> 19th May, 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="latest-item set-bg" data-setbg="img/blog/latest-b/latest-2.jpg">
+                        <div class="li-tag">Experience</div>
+                        <div class="li-text">
+                            <h5><a href="./blog-details.html">All users on MySpace will know that there are millions of
+                                    people out there.</a></h5>
+                            <span><i class="fa fa-clock-o"></i> 19th May, 2019</span>
+                        </div>
+                    </div>
+                    <div class="latest-item set-bg" data-setbg="img/blog/latest-b/latest-3.jpg">
+                        <div class="li-tag">Marketing</div>
+                        <div class="li-text">
+                            <h5><a href="./blog-details.html">A Pocket PC is a handheld computer, which features many of
+                                    the same capabilities.</a></h5>
+                            <span><i class="fa fa-clock-o"></i> 19th May, 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- latest BLog Section End -->
+
+    <!-- Newslatter Section Begin -->
+    <!-- <section class="newslatter-section">
+        <div class="container">
+            <div class="newslatter-inner set-bg" data-setbg="img/newslatter-bg.jpg">
+                <div class="ni-text">
+                    <h3>Subscribe Newsletter</h3>
+                    <p>Subscribe to our newsletter and don’t miss anything</p>
+                </div>
+                <form action="#" class="ni-form">
+                    <input type="text" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    <!-- Newslatter Section End -->
+
+    <!-- Contact Section Begin -->
+    <section class="contact-section spad" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h2>Location</h2>
+                        <p>Get directions to our event center</p>
+                    </div>
+                    <div class="cs-text">
+                        <div class="ct-address">
+                            <span>Address:</span>
+                            <p>34, Elliot's Promenade, Odaimanagar, Besant Nagar, <br />Chennai, Tamil Nadu 600090
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <span>Phone:</span>
+
+                            </li>
+                            <li>
+                                <span>Email:</span>
+
+                            </li>
+                        </ul>
+                        <div class="ct-links">
+                            <span>Website:</span>
+                            <p>www.walkathonevent.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cs-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1294691085855!2d80.27131831520485!3d12.999234690859583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d8f90e2bb7d%3A0xa3b22fc3e31e7b5b!2sBesant%20Nagar%20Beach!5e0!3m2!1sen!2sin!4v1694283957402!5m2!1sen!2sin"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="partner-logo owl-carousel">
+                <a href="#" class="pl-table">
+                    <div class="pl-tablecell">
+                        <img src="img/partner-logo/logo-1.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="pl-table">
+                    <div class="pl-tablecell">
+                        <img src="img/partner-logo/logo-2.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="pl-table">
+                    <div class="pl-tablecell">
+                        <img src="img/partner-logo/logo-3.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="pl-table">
+                    <div class="pl-tablecell">
+                        <img src="img/partner-logo/logo-4.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="pl-table">
+                    <div class="pl-tablecell">
+                        <img src="img/partner-logo/logo-5.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="pl-table">
+                    <div class="pl-tablecell">
+                        <img src="img/partner-logo/logo-6.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-text">
+                        <div class="ft-logo">
+                            <a href="#" class="footer-logo"><img src="img/logo.jpg" width="70px" height="70px"
+                                    alt=""></a>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#coaches">Coaches</a></li>
+                            <li><a href="#event">Event Register</a></li>
+                            <li><a href="#contacts">Contact</a></li>
+                        </ul>
+                        <div class="copyright-text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                        <div class="ft-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
